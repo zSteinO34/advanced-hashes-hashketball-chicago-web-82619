@@ -266,6 +266,7 @@ def long_name_steals_a_ton
         if name.size > name_length
           player = name
           name_length = name.size
+          #ar.max_by(&:length)
         end
       }
     }
