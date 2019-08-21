@@ -223,7 +223,9 @@ def winning_team
   home = 0
   away = 0
   game_hash[:home][:players].each { |teammates|
-    binding.pry
+    teammates.each { |name, stats|
+      binding.pry
+    }
   }
 end
 
