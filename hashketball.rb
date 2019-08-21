@@ -257,7 +257,7 @@ def player_with_longest_name
   player
 end
 
-def long_name_steals_a_ton
+def long_name_steals_a_ton?
   steals = 0
   name_length = 0
   game_hash.each { |team, details|
