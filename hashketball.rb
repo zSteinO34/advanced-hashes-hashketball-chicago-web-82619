@@ -224,8 +224,20 @@ def winning_team
   away = 0
   game_hash[:home][:players].each { |teammates|
     teammates.each { |name, stats|
-      binding.pry
+      home += stats[:points]
     }
   }
+  game_hash[:away][:players].each { |teammates|
+    teammates.each { |name, stats|
+      away += stats[:points]
+    }
+  }
+  if home > away
+    home
+  elsif away > home
+    away
+  else
+    p "The score is tied"
+  end
 end
 
