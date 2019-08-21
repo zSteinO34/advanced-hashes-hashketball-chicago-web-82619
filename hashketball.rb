@@ -263,7 +263,7 @@ def long_name_steals_a_ton?
   game_hash.each { |team, details|
     details[:players].each { |players|
       players.each { |name, stats|
-      binding.pry
+
         if name.size > name_length
           steals = stats[:steals]
           name_length = name.size
