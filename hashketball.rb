@@ -265,13 +265,14 @@ def long_name_steals_a_ton?
       players.each { |name, stats|
       binding.pry
         if name.size > name_length
-          player = name
+          steals = stats[:steals]
           name_length = name.size
-          #ar.max_by(&:length)
+        end
+        if name.size > name_length && stats[:steals] > steals
+          return TRUE
         end
       }
     }
   }  
-  player
 end
 
