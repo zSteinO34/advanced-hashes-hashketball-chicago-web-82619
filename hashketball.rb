@@ -219,3 +219,11 @@ def most_points_scored
   player
 end
 
+def winning_team
+  home = 0
+  away = 0
+  game_hash[:home][:players].each { |name, stats|
+    binding.pry
+  }
+end
+
