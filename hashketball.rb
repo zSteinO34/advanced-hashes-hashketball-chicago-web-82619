@@ -268,9 +268,10 @@ def long_name_steals_a_ton?
           name_length = name.size
           if name.size > name_length && stats[:steals] > steals
             return TRUE
+          else
+            return FALSE
           end
         end
-        
       }
     }
   }  
