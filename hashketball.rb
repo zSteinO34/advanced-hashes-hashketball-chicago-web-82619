@@ -233,9 +233,9 @@ def winning_team
     }
   }
   if home > away
-    home
+    game_hash[:home][:team_name]
   elsif away > home
-    away
+    game_hash[:away][:team_name]
   else
     p "The score is tied"
   end
